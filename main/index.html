@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html class="no-js" lang="en"> 
+<html class="no-js" lang="ko"> 
     <head>
         <meta charset="utf-8">
         <meta name="description" content="">
@@ -10,8 +10,8 @@
         <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
         
         <!-- import css -->
-        <link rel="stylesheet" href="../common_file/css/swiper.min.css">
-        <link rel="stylesheet" href="../common_file/css/reset.css">
+        <link rel="stylesheet" href="..common_file/css/swiper.min.css">
+        <link rel="stylesheet" href="..common_file/css/reset.css">
         <link rel="stylesheet" href="css/style.css">
 
         <title>GaYoung's Portfolio</title>
@@ -19,21 +19,22 @@
 
     <body>
         <!-- Preloader -->
-        <div id="preloader">
+        <!-- <div id="preloader">
             <div class="object">
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-        </div>
+        </div> -->
+        <!--End off Preloader -->
         <div id="wrapper">
-            <!--End off Preloader -->
             <header>
                 <div class="logo"></div>
                 <ul class="top_nav col_ct">
                     <li data-scroll="home" href="#home" >Home</li>
                     <li data-scroll="web" href="#web">Web</li>
+                    <li data-scroll="mobile" href="#mobile">Mobile</li>
                     <li data-scroll="graphic" href="#graphic">Graphic</li>
                     <li data-scroll="aboutMe" href="#aboutMe">About Me</li>
                     <li data-scroll="contact" href="#contact">Contact</li>
@@ -74,8 +75,7 @@
                             </div>
                             <div class="link link1">
                                 <div>Main</div>
-                                <div>Sub1</div>
-                                <div>Sub2</div>
+                                <div>Sub</div>
                             </div>
                         </div>
                     </div>
@@ -101,8 +101,6 @@
                             </div>
                             <div class="link link2">
                                 <div>Main</div>
-                                <div>Sub1</div>
-                                <div>Sub2</div>
                             </div>
                         </div>
                         <img src="img/web/2.png" class="web_img">
@@ -162,10 +160,40 @@
                     </div>
                 </div>
             </section>
-            <section id="graphic">
-                <div class="sub_title row_ct bg-white">    
+            <section id="mobile">
+                <div class="sub_title row_ct">    
                     <h2>MY WORKS</h2>
-                    <h5>Gaphiceb Design</h5>
+                    <h5>Mobile Web</h5>
+                </div>
+
+                <div class="mockup">
+                    <img src="img/mobile/phone.png" class="phone">
+                    <img src="img/mobile/phone_header.png" class="phone_h">
+                    <div class="swiper-container mobile-swiper-container mbSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/mobile/1.png"></div>
+                            <div class="swiper-slide"><img src="img/mobile/2.png"></div>
+                            <div class="swiper-slide"><img src="img/mobile/3.png"></div>
+                            <div class="swiper-slide"><img src="img/mobile/4.png"></div>
+                            <div class="swiper-slide"><img src="img/mobile/5.png"></div>
+                            <div class="swiper-slide"><img src="img/mobile/6.png"></div>
+                            <div class="swiper-slide"><img src="img/mobile/7.png"></div>
+                            <div class="swiper-slide"><img src="img/mobile/8.png"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb_subscript">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-container mbSub-swiper-container">
+                        <div class="swiper-wrapper mbSubSwiper"></div>
+                    </div>
+
+                </div>
+            </section>
+            <section id="graphic">
+                <div class="sub_title row_ct">    
+                    <h2>MY WORKS</h2>
+                    <h5>Gaphic Design</h5>
                 </div>
                 <div class="thumb-prev">
                     <img src="img/graphic/thumb/prev.png">
@@ -190,11 +218,11 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/graphic/thumb/3.png" class="thumb">
+                            <img src="img/graphic/thumb/6.png" class="thumb">
                             <div class="more">detail view</div>
                             <div class="gp_text">
-                                <h5>Rabbit with the moon</h5>
-                                <h6>Motion graphic design</h6>
+                                <h5>花</h5>
+                                <h6>Graphic Design</h6>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -213,14 +241,7 @@
                                 <h6>Poster graphic</h6>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="img/graphic/thumb/6.png" class="thumb">
-                            <div class="more">detail view</div>
-                            <div class="gp_text">
-                                <h5>花</h5>
-                                <h6>Graphic Design</h6>
-                            </div>
-                        </div>
+                 
                     </div>
                 </div>
               
@@ -238,16 +259,13 @@
                                 <img src="img/graphic/2.png"  class="gd_popup">
                             </div>
                             <div class="swiper-slide">
-                                <video src="img/graphic/3.mp4" class="gd_popup" width='1125' controls></video>
+                                <img src="img/graphic/6.png" class="gd_popup" >
                             </div>
                             <div class="swiper-slide">
                                 <img src="img/graphic/4.png" class="gd_popup" >
                             </div>
                             <div class="swiper-slide">
                                 <img src="img/graphic/5.png" class="gd_popup" >
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/graphic/6.png" class="gd_popup" >
                             </div>
                         </div>
                     </div>
@@ -268,13 +286,14 @@
                 <div class="infoBox row_ct">
                     <div class="info">
                          <h4>홍가영 <span>1998.09.10</span></h4>
-                         <p>시각디자인과 디지털디자인 2년제 학사<br />
-                            컴퓨터공학과 재학 중
+                         <p>한국 폴리텍 대학 시각디자인과 졸업 (2020.02)<br />
+                            컴퓨터공학과 재학 중 (2020.03~)<br />
+                            아이엠폼 시스템팀 재직 중 (2019.11~)
                          </p>
                         <h3>License & Career</h3>
-                        <p>시각디자인 산업기사<br />
-                           국제 커뮤니케이션 디자인 공모전 입선<br />
+                        <p>국제 커뮤니케이션 디자인 공모전 입선<br />
                            대한민국 여성미술대전 회화부문 입선<br />
+                           시각디자인 산업기사<br />
                            NFC 스티커 디자인</p>
                     </div>
                     <img src="img/pic.png" class="pic row_ct">
@@ -335,11 +354,11 @@
         </div>
 
         <!-- import js -->
-        <script src="../common_file/js/jquery-3.3.1.min.js"></script>
-        <script src="../common_file/js/swiper.min.js"></script>
-        <script src="../common_file/js/TweenMax.min.js"></script>
-        <script src="../common_file/js/ScrollMagic.js"></script>
-        <script src="../common_file/js/animation.gsap.js"></script>
+        <script src="..common_file/js/jquery-3.3.1.min.js"></script>
+        <script src="..common_file/js/swiper.min.js"></script>
+        <script src="..common_file/js/TweenMax.min.js"></script>
+        <script src="..common_file/js/ScrollMagic.js"></script>
+        <script src="..common_file/js/animation.gsap.js"></script>
         <script src="js/main.js"></script>
         <script src="js/clickEvent.js"></script>
         <script src="js/motion.js"></script>

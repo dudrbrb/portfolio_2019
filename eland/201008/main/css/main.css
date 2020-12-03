@@ -1,0 +1,101 @@
+body,
+html {
+    width: 540px;
+    margin: 0 auto;
+    -ms-overflow-style: none;
+}
+
+#wrapper {
+    width: 540px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /* opacity:0; */
+}
+
+#img {
+    position: relative;
+}
+
+#title {
+    position: absolute;
+    top:160px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    z-index: 3;
+    opacity:0;
+}
+
+#title2 {
+    position: absolute;
+    top: 750px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    z-index: 3;
+    opacity:0;
+}
+
+.more1 {
+    position: absolute;
+    top:390px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    z-index: 3;
+    opacity:0;
+}
+
+.more2 {
+    position: absolute;
+    top: 980px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    z-index: 3;
+    opacity:0;
+}
+
+#bg {
+    position: absolute;
+    width: 540px;
+    height: 600px;
+    background: url(../img/bg.png);
+    opacity:0;
+    z-index: 2;
+}
+
+#bg2 {
+    position: absolute;
+    width: 540px;
+    height:600px;
+    background: url(../img/bg.png);
+    opacity:0;
+    z-index: 2;
+}
+
+.swiper-container {
+    width:540px;
+    overflow: hidden
+}
+
+.swiper-container2 {
+    width:540px;
+    overflow: hidden
+}
+
+.swiper-slide {
+    width: 540px;
+    position: relative;
+}
+.swiper-slide .img{
+    width: 540px;
+    height: 600px;
+}
+/* .scroll_btn{
+    position: absolute;
+    top: 500px;
+    left: 247px;
+    z-index: 2;
+} */

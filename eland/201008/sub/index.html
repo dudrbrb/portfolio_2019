@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="viewport" content="width=540,user-scalable=no" />
+    <meta name="apple-mobile-web-app-title" content="NAVER" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+
+    <link rel="stylesheet" href="..common_file/css/common/reset.css" />
+    <link rel="stylesheet" href="..common_file/css/common/swiper.min.css" />
+    <link rel="stylesheet" href="../bottom/css/bottom.css">
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="..common_file/js/common/jquery-2.2.4.min.js"></script>
+    <script src="..common_file/js/common/jquery.easing.1.3.js"></script>
+    <script src="..common_file/js/common/swiper.min.js"></script>
+    <script src="..common_file/js/common/TweenMax.min.js"></script>
+    <script src="..common_file/js/common/ScrollMagic.js"></script>
+    <script src="..common_file/js/common/animation.gsap.js"></script>
+
+    <title>VIP 매거진</title>
+  </head>
+
+  <body>
+    <div id="more">
+      <div class="moreClose"></div>
+      <div class="pre_btn_wrapper">
+        <div class="pre_btn"></div>
+        <div class="pre_btn"></div>
+      </div>
+      <div class="pre_btn_wrapper">
+        <div class="pre_btn"></div>
+        <div class="pre_btn"></div>
+      </div>
+      <div class="pre_btn_wrapper">
+        <div class="pre_btn"></div>
+        <div class="pre_btn"></div>
+      </div>
+      <div class="pre_btn_wrapper">
+        <div class="pre_btn"></div>
+        <div class="pre_btn"></div>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div class="navi">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>     
+          <li></li>     
+        </ul>
+      </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide fashion1" data-hash="sub1">
+              <img src="img/fashion/1/bg.png" class="bg">
+              <img src="img/num/1.png" class="number num1">
+
+              <img src="img/fashion/1/box1.png" class="fs1_box1 ct moveY fs1_stg1">
+              <img src="img/fashion/1/box2.png" class="fs1_box2 ct moveY fs1_stg1">
+              <img src="img/fashion/1/box3.png" class="fs1_box3 ct moveY fs1_stg1">
+              <img src="img/fashion/1/box4.png" class="fs1_box4 ct moveY fs1_stg2">
+              <img src="img/fashion/1/box5.png" class="fs1_box5 ct moveY fs1_stg2">
+              <img src="img/fashion/1/box6.png" class="fs1_box6 ct moveY fs1_stg2">
+
+              <img src="img/fashion/1/txt1.png" class="fs1_txt1 moveY">
+              <img src="img/fashion/1/txt2.png" class="fs1_txt2 clip">
+              <img src="img/fashion/1/txt3.png" class="fs1_txt3 ct clip">
+              <img src="img/fashion/1/txt4.png" class="fs1_txt4 ct moveY">
+              <img src="img/fashion/1/txt5.png" class="fs1_txt5 moveY">
+              <img src="img/fashion/1/txt6.png" class="fs1_txt6 clip">
+              <img src="img/fashion/1/txt7.png" class="fs1_txt7 ct moveY">
+              <img src="img/fashion/1/txt8.png" class="fs1_txt8 ct moveY">
+
+              <img src="img/fashion/1/img1.png" class="fs1_img1">
+              <img src="img/fashion/1/img2.png" class="fs1_img2">
+              <img src="img/fashion/1/img3.png" class="fs1_img3 clip">
+              <img src="img/fashion/1/img4.png" class="fs1_img4">
+              <img src="img/fashion/1/img5.png" class="fs1_img5">
+              <img src="img/fashion/1/img6.png" class="fs1_img6">
+              <img src="img/fashion/1/img7.png" class="fs1_img7">
+              <img src="img/fashion/1/img8.png" class="fs1_img8">
+              <img src="img/fashion/1/img9.png" class="fs1_img9">
+              <img src="img/fashion/1/img10.png" class="fs1_img10">
+
+              <div class="video1">
+                <div class="videoClick" id="video1" data-idx="1">
+                    <img src="img/thumb/v1.png"class="playbtn">
+                </div>
+              </div>
+        
+            </div>
+
+            <div class="swiper-slide fashion2" data-hash="sub1_2">
+              <img src="img/fashion/2/bg.png" class="bg">
+              <img src="img/num/2.png" class="number num2">
+
+              <img src="img/fashion/2/box1.png" class="fs2_box1 ct moveY fs2_stg1">
+              <img src="img/fashion/2/box2.png" class="fs2_box2 ct moveY fs2_stg1">
+              <img src="img/fashion/2/box3.png" class="fs2_box3 ct moveY fs2_stg1">
+              <img src="img/fashion/2/box4.png" class="fs2_box4 ct moveY fs2_stg2">
+              <img src="img/fashion/2/box5.png" class="fs2_box5 ct moveY fs2_stg2">
+              <img src="img/fashion/2/box6.png" class="fs2_box6 ct moveY fs2_stg2">
+
+              <img src="img/fashion/2/txt1.png" class="fs2_txt1 clip">
+              <img src="img/fashion/2/txt2.png" class="fs2_txt2 clip">
+              <img src="img/fashion/2/txt3.png" class="fs2_txt3 clip">
+              <img src="img/fashion/2/txt4.png" class="fs2_txt4 ct moveY">
+              <img src="img/fashion/2/txt5.png" class="fs2_txt5 clip">
+              <img src="img/fashion/2/txt6.png" class="fs2_txt6 moveY">
+              <img src="img/fashion/2/txt7.png" class="fs2_txt7 clip">
+              <img src="img/fashion/2/txt8.png" class="fs2_txt8 ct moveY">
+              <img src="img/fashion/2/txt9.png" class="fs2_txt9 clip">
+              <img src="img/fashion/2/txt10.png" class="fs2_txt10 ct moveY">
+
+              <img src="img/fashion/2/img1.png" class="fs2_img1">
+              <img src="img/fashion/2/img2.png" class="fs2_img2">
+              <img src="img/fashion/2/img3.png" class="fs2_img3">
+              <img src="img/fashion/2/img4.png" class="fs2_img4">
+              <img src="img/fashion/2/img5.png" class="fs2_img5">
+              <img src="img/fashion/2/img6.png" class="fs2_img6">
+              <img src="img/fashion/2/img7.png" class="fs2_img7">
+              <img src="img/fashion/2/img8.png" class="fs2_img8">
+              <img src="img/fashion/2/img9.png" class="fs2_img9">
+            </div>
+
+            <div class="swiper-slide fashion3" data-hash="sub1_3">
+              <img src="img/fashion/3/bg.png" class="bg">
+              <img src="img/num/3.png" class="number num3">
+
+              <img src="img/fashion/3/txt1.png" class="fs3_txt1 clip">
+              <img src="img/fashion/3/txt2.png" class="fs3_txt2 moveY">
+              <img src="img/fashion/3/txt3.png" class="fs3_txt3 ct moveY">
+
+              <img src="img/fashion/3/img1.png" class="fs3_img1 ct clip">
+              <img src="img/fashion/3/img2.png" class="fs3_img2 ct clip">
+              <img src="img/fashion/3/img3.png" class="fs3_img3 ct clip">
+              <img src="img/fashion/3/img4.png" class="fs3_img4 ct clip">
+              <img src="img/fashion/3/img5.png" class="fs3_img5 ct clip">
+              <img src="img/fashion/3/img6.png" class="fs3_img6 ct clip">
+
+              <img src="img/fashion/3/list1.png" class="fs3_list1 ct list1 fromRight">
+              <img src="img/fashion/3/list2.png" class="fs3_list2 ct list1 fromRight">
+              <img src="img/fashion/3/list3.png" class="fs3_list3 ct list1 fromRight">
+              <img src="img/fashion/3/list4.png" class="fs3_list4 ct list1 fromRight">
+              <img src="img/fashion/3/list5.png" class="fs3_list5 ct list2 fromRight">
+              <img src="img/fashion/3/list6.png" class="fs3_list6 ct list2 fromRight">
+              <img src="img/fashion/3/list7.png" class="fs3_list7 ct list2 fromRight">
+              <img src="img/fashion/3/list8.png" class="fs3_list8 ct list2 fromRight">
+              <img src="img/fashion/3/list9.png" class="fs3_list9 ct list2 fromRight">
+              <img src="img/fashion/3/list10.png" class="fs3_list10 ct list3 fromRight">
+              <img src="img/fashion/3/list11.png" class="fs3_list11 ct list3 fromRight">
+              <img src="img/fashion/3/list12.png" class="fs3_list12 ct list3 fromRight">
+
+              <div class="video2">
+                <div class="videoClick" id="video2" data-idx="2">
+                    <img src="img/thumb/v2.png"class="playbtn">
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide fashion4" data-hash="sub1_4">
+              <img src="img/fashion/4/bg.png" class="bg">
+              <img src="img/num/4.png" class="number num4">
+
+              <img src="img/fashion/4/box1.png" class="fs4_box1 ct moveY fs4_stg1">
+              <img src="img/fashion/4/box2.png" class="fs4_box2 ct moveY fs4_stg1">
+              <img src="img/fashion/4/box3.png" class="fs4_box3 ct moveY fs4_stg2">
+              <img src="img/fashion/4/box4.png" class="fs4_box4 ct moveY fs4_stg2">
+              <img src="img/fashion/4/box5.png" class="fs4_box5 ct moveY fs4_stg3">
+              <img src="img/fashion/4/box6.png" class="fs4_box6 ct moveY fs4_stg3">
+
+              <img src="img/fashion/4/txt1.png" class="fs4_txt1 clip">
+              <img src="img/fashion/4/txt2.png" class="fs4_txt2 clip">
+              <img src="img/fashion/4/txt3.png" class="fs4_txt3 clip">
+            </div>
+
+            <div class="swiper-slide food1" data-hash="sub2">
+              <img src="img/food/1/bg.png" class="bg">
+              <img src="img/num/5.png" class="number num5">
+
+              <img src="img/food/1/box1.png" class="fd1_box1 ct moveY fd1_stg1">
+              <img src="img/food/1/box2.png" class="fd1_box2 ct moveY fd1_stg1">
+              <img src="img/food/1/box3.png" class="fd1_box3 ct moveY fd1_stg1">
+
+              <img src="img/food/1/txt1.png" class="fd1_txt1 clip">
+              <img src="img/food/1/txt2.png" class="fd1_txt2 ct clip">
+
+              <div class="video3">
+                <div class="videoClick" id="video3" data-idx="3">
+                    <img src="img/thumb/v3.png"class="playbtn">
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide food2" data-hash="sub2_2">
+              <img src="img/food/2/bg.png" class="bg">
+              <img src="img/num/6.png" class="number num6">
+         
+              <img src="img/food/2/img1.png" class="fd2_img1 fromRight">
+              <img src="img/food/2/img2.png" class="fd2_img2 fromRight">
+
+              <img src="img/food/2/txt1.png" class="fd2_txt1 clip fd2_stg1">
+              <img src="img/food/2/txt2.png" class="fd2_txt2 clip fd2_stg1">
+              <img src="img/food/2/txt3.png" class="fd2_txt3 ct clip">
+              <img src="img/food/2/txt4.png" class="fd2_txt4 clip">
+              <img src="img/food/2/txt5.png" class="fd2_txt5 ct moveY">
+
+              <div class="video4">
+                <div class="videoClick" id="video4" data-idx="4">
+                    <img src="img/thumb/v4.png"class="playbtn">
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide food3" data-hash="sub2_3">
+              <img src="img/food/3/bg.png" class="bg">
+              <img src="img/num/7.png" class="number num7">
+
+              <img src="img/food/3/txt.png" class="fd3_txt1 ct moveY">
+              <img src="img/food/3/btn.png" class="fd3_btn ct">
+              
+            </div>
+
+            <div class="swiper-slide food4" data-hash="sub2_4">
+              <img src="img/food/4/bg.png" class="bg">
+              <img src="img/num/8.png" class="number num8">
+     
+              <img src="img/food/4/line1.png" class="fd4_line1 clip">
+              <img src="img/food/4/line2.png" class="fd4_line2 clip">
+              <img src="img/food/4/line3.png" class="fd4_line3 clip">
+              <img src="img/food/4/line4.png" class="fd4_line4 clip">
+              <img src="img/food/4/line5.png" class="fd4_line5 clip">
+              <img src="img/food/4/line6.png" class="fd4_line6 clip">
+              <img src="img/food/4/line7.png" class="fd4_line7 clip">
+              <img src="img/food/4/line8.png" class="fd4_line8 clip">
+              <img src="img/food/4/line9.png" class="fd4_line9 clip">
+              <img src="img/food/4/line10.png" class="fd4_line10 clip">
+              <img src="img/food/4/line11.png" class="fd4_line11 clip fd4_stg6">
+              <img src="img/food/4/line12.png" class="fd4_line12 clip fd4_stg6">
+              <img src="img/food/4/line13.png" class="fd4_line13 clip">
+              <img src="img/food/4/line14.png" class="fd4_line14 clip">
+              <img src="img/food/4/line15.png" class="fd4_line15 clip fd4_stg7">
+              <img src="img/food/4/line16.png" class="fd4_line16 clip fd4_stg7">
+              <img src="img/food/4/line17.png" class="fd4_line17 clip">
+              <img src="img/food/4/line18.png" class="fd4_line18 clip">
+              <img src="img/food/4/line21.png" class="fd4_line19 clip">
+              <img src="img/food/4/line20.png" class="fd4_line20 clip">
+              <img src="img/food/4/line19.png" class="fd4_line21 clip fd4_stg10">
+              <img src="img/food/4/line22.png" class="fd4_line22 clip fd4_stg10">
+
+              <img src="img/food/4/txt1.png" class="fd4_txt1 ct op">
+              <img src="img/food/4/txt2.png" class="fd4_txt2 op">
+              <img src="img/food/4/txt3.png" class="fd4_txt3 op">
+              <img src="img/food/4/txt4.png" class="fd4_txt4 op">
+              <img src="img/food/4/txt5.png" class="fd4_txt5 op">
+              <img src="img/food/4/txt6.png" class="fd4_txt6 op">
+              <img src="img/food/4/txt7.png" class="fd4_txt7 op">
+              <img src="img/food/4/txt8.png" class="fd4_txt8 op">
+              <img src="img/food/4/txt9.png" class="fd4_txt9 op">
+              <img src="img/food/4/txt10.png" class="fd4_txt10 op">
+              <img src="img/food/4/txt11.png" class="fd4_txt11 op">
+              <img src="img/food/4/txt12.png" class="fd4_txt12 op fd4_stg2">
+              <img src="img/food/4/txt13.png" class="fd4_txt13 op fd4_stg2">
+              <img src="img/food/4/txt14.png" class="fd4_txt14 op fd4_stg3">
+              <img src="img/food/4/txt15.png" class="fd4_txt15 op fd4_stg3">
+              <img src="img/food/4/txt16.png" class="fd4_txt16 op fd4_stg4">
+              <img src="img/food/4/txt17.png" class="fd4_txt17 op fd4_stg4">
+              <img src="img/food/4/txt18.png" class="fd4_txt18 op fd4_stg5">
+              <img src="img/food/4/txt19.png" class="fd4_txt19 op fd4_stg5">
+              <img src="img/food/4/txt20.png" class="fd4_txt20 ct moveY">
+              <img src="img/food/4/txt21.png" class="fd4_txt21 op">
+              <img src="img/food/4/txt22.png" class="fd4_txt22 op">
+              <img src="img/food/4/txt23.png" class="fd4_txt23 op">
+              <img src="img/food/4/txt24.png" class="fd4_txt24 op">
+              <img src="img/food/4/txt25.png" class="fd4_txt25 ct moveY">
+              <img src="img/food/4/txt26.png" class="fd4_txt26 ct">
+              <img src="img/food/4/txt27.png" class="fd4_txt27 ct">
+              <img src="img/food/4/txt28.png" class="fd4_txt28 ct moveY">
+              <img src="img/food/4/txt29.png" class="fd4_txt29 op">
+              <img src="img/food/4/txt30.png" class="fd4_txt30 op">
+              <img src="img/food/4/txt31.png" class="fd4_txt31 op fd4_stg9">
+              <img src="img/food/4/txt32.png" class="fd4_txt32 op">
+              <img src="img/food/4/txt33.png" class="fd4_txt33 op">
+              <img src="img/food/4/txt34.png" class="fd4_txt34 op fd4_stg9">
+
+              <img src="img/food/4/img1.png" class="fd4_img1 op">
+              <img src="img/food/4/img2.png" class="fd4_img2 fromLeft">
+              <img src="img/food/4/img3.png" class="fd4_img3 fromRight">
+              <img src="img/food/4/img4.png" class="fd4_img4 ct moveY">
+              <img src="img/food/4/img9.png" class="fd4_img5 fromLeft">
+              <img src="img/food/4/img5.png" class="fd4_img6 fromRight">
+              <img src="img/food/4/img6.png" class="fd4_img7 fromLeft">
+              <img src="img/food/4/img8.png" class="fd4_img8 fromRight" >
+              <img src="img/food/4/img7.png" class="fd4_img9 fromLeft">
+
+              <img src="img/food/4/point1.png" class="fd4_pt1 clip">
+              <img src="img/food/4/point2.png" class="fd4_pt2 clip fd4_stg1">
+              <img src="img/food/4/point2.png" class="fd4_pt3 clip fd4_stg1">
+              <img src="img/food/4/point3.png" class="fd4_pt4 clip fd4_stg1">
+              <img src="img/food/4/point4.png" class="fd4_pt5 clip">
+              <img src="img/food/4/point5.png" class="fd4_pt6 clip fd4_stg6">
+              <img src="img/food/4/point6.png" class="fd4_pt7 clip">
+              <img src="img/food/4/point7.png" class="fd4_pt8">
+              
+              <img src="img/food/4/point8.png" class="fd4_chk1 clip fd4_stg8">
+              <img src="img/food/4/point8.png" class="fd4_chk2 clip fd4_stg8">
+              <img src="img/food/4/point8.png" class="fd4_chk3 clip fd4_stg8">
+              <img src="img/food/4/point8.png" class="fd4_chk4 clip fd4_stg8">
+
+              <div class="video5">
+                <div class="videoClick" id="video5" data-idx="5">
+                    <img src="img/thumb/v5.png"class="playbtn">
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-hash="sub3">
+              <img src="img/fin/bg.png" class="bg">
+              <img src="img/num/9.png" class="number num9">
+              
+              <img src="img/fin/img2.png" class="fin_img">
+              <img src="img/fin/img1.png" class="fin_img fin_img1">
+
+              <div class="mokooBtn ct"></div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"><img src="img/right.png"></div>
+          <div class="swiper-button-prev"><img src="img/left.png"></div>
+
+        </div>
+    </div>
+
+    <script src="../bottom/js/bottom.js"></script>
+    <script src="js/clickEvent.js"></script>
+    <script src="js/motion.js"></script>
+    <script src="js/makeSwipe.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/youtube.js"></script>
+
+  </body>
+</html>

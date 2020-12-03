@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=540,user-scalable=no">
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache">
+
+    <link rel="stylesheet" href="..common_file/css/reset.css">
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>롯데백화점</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id='loading' style='display: none;'>
+            <img style='position:fixed; top:0; bottom:0; left:0; right:0; margin:auto auto;' src='img/loading.gif'> 
+        </div>
+        <div class="popup_wrapper">
+
+            <div class="popup ct">
+                <div class="characters">
+                    <div id="popCoat"></div>
+                    <div id="popPadding"></div>
+                </div>
+                <img src="img/pop/eff.png" class="winner_eff">
+                <img src="img/pop/txt/ct_win.png" class="winner_text ct">
+                <img src="img/pop/cp_btn.png" class="cp_btn">
+                <img class="prod_btn">
+                
+                <div id="ct_result"></div>
+                <div id="pd_result"></div>
+
+                <div class="score ct">
+                    <div class="ct_score_bar"></div>
+                    <div class="pd_score_bar"></div>
+                    
+                    <p id="ct_score" class="ct_score"></p>
+                    <p id="pd_score" class="pd_score"></p>
+                </div>
+
+                <div class="close"></div>
+
+                <div class="countdown"></div>
+            </div>
+        </div>
+        <div class="top">
+            <img src="img/top/tit.png" class="tit ct">
+            <img src="img/top/s_tit.png" class="s_tit ct">
+            <img src="img/top/date.png" class="date ct">
+            <img src="img/top/txt.png" class="top_txt sc_bot">
+            <img src="img/top/vs_txt.png" class="top_vs ct hide">
+
+            <img src="img/top/1/eff.png" class="ct_eff ">
+            <img src="img/top/1/img.png" class="ct_img">
+            <img src="img/top/1/txt.png" class="ct_txt sc_bot">
+
+            <img src="img/top/2/eff.png" class="pd_eff">
+            <img src="img/top/2/img.png" class="pd_img">
+            <img src="img/top/2/txt.png" class="pd_txt sc_bot">
+        </div>
+        <div class="mid">
+            <img src="img/bot/txt.png" class="video_txt ct">
+            <div class="video ct">
+                <div class="videoClick" id="video1" data-idx="1">
+                    <img src="img/bot/thumb.png" class="playbtn">
+                </div>
+            </div>
+
+            <div class="paper">
+                <img src="img/bot/paper.png" class="paper_bg ct">
+                
+                <label for="coat"> 
+                    <input type="radio" name="vote" id="coat" value="코트">
+                    <img src="img/bot/active1.png" class="ct_act">
+                </label>
+                <label for="padding"> 
+                    <input type="radio" name="vote" id="padding" value="숏패딩">
+                    <img src="img/bot/active2.png" class="pd_act">
+                </label>
+
+                <img src="img/bot/btn.png" class="vote_btn ct hide">
+            </div>
+            <img src="img/bot/shadow.png" class="shadow ct">
+        </div>
+        <div class="bot">
+            <img src="img/bot/bottom.png" class="ct">
+        </div>
+    </div>    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="..common_file/js/TweenMax.min.js"></script>
+    <script src="js/count.js"></script>
+    <script src="js/youtube.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

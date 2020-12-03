@@ -1,0 +1,10 @@
+#wrapper {
+    position: relative;
+    width: 540px;
+    height: 1000px;
+    overflow: hidden;
+}
+html,body  {
+    width: 540px;
+    margin: 0 auto;
+}
