@@ -664,17 +664,20 @@ header.on .logo{
   width: 752px;
   top: 470px;
 }
-.contactBox div{
+.contactBox a{
   display: inline-block;
+  text-decoration: none;
   text-align: center;
+  font-weight: 500;
+  color: #ffffff;
   width: 200px;
   margin: 100px 20px 0px ;
 }
 
-.contactBox div:nth-child(2){
+.contactBox address:nth-child(2){
   width: 220px;
 }
-.contactBox div:nth-child(3){
+.contactBox a:nth-child(3){
   font-size: 19px;
 }
 
@@ -682,12 +685,7 @@ header.on .logo{
   margin-bottom: 30px;
   vertical-align: middle;
 }
-.contactBox a{
-  text-decoration: none;
-  color: #ffffff;
-  display: block;
-  font-weight: 500;
-}
+
 /* concact fin */
 /* footer */
 
