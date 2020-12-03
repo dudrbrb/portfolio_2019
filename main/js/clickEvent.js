@@ -2,6 +2,7 @@ var idx,
     subIdx;
 
 var link,
+    goLink,
     subLink;
 
 $('.top_nav li').on('click', function(e){
@@ -30,12 +31,10 @@ $(".link_btn").on("click" , function(){
 
 $(".link div").on("click", function(){
     subIdx = $(this).index();
+    subLink = "/sub" + subIdx;
     
-    if(subIdx == 0) subLink = "/main";
-    else subLink = "/sub" + subIdx;
-
-    var goLink = link + subLink + "/index.html"
-    window.open(link + subLink + "/index.html")
+    subIdx == 0 ? goLink = link + "/index.html" : goLink = link + subLink + "/index.html";
+    window.open(goLink);
 });
 
 var mbLink = [
