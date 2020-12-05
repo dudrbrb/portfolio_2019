@@ -73,7 +73,7 @@ var i = 0;
 		'<ul class="sub_btn sub'+ idx +'_btn" style="top:689px;">'+ 
 		'	<li data-name="b3"></li>'+ 
 		'	<li data-name="b4"></li>'+ 
-		'</ul>;';
+		'</ul>';
 
 		t.innerHTML += contents;
 	}

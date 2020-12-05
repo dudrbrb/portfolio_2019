@@ -5,5 +5,5 @@ $(window).on("load", function () {
 
 
 $('.mainBtn').on('click', function () {
-    window.open('http://skmagicathome.com/magic/200902/main/index.html?messageHash=undefined&userHash=undefined', '_self')
+    window.open('https://dudrbrb.github.io/portfolio/main/index.html', '_self')
 })
