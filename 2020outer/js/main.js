@@ -26,7 +26,7 @@ $(window).on("load", function(){
           }
         },
         400: function(err){
-         alert('이름이 membernum, Value는 아무 숫자를 넣은 쿠키를 만들어주세요.')
+         alert('이름이 membernum인 cookie를 생성해주세요. \n value에 아무 숫자를 넣어주시면 됩니다. \n membernum을 바꾸면 중복참여가 가능합니다.')
         },
         404: function(err){
          errorMessege(err);
@@ -42,7 +42,7 @@ $(window).on("load", function(){
     });
     
 });
-var membernum = 11,
+var membernum = getCookie('membernum'),
     nowDate = new Date(),
     finDay = nowDate.getDate();
     
