@@ -22,7 +22,6 @@ $(".link_btn").on("click" , function(){
     link = "../sub" + idx;
 
     if($(".link_btn").hasClass("on")){   
-        TweenMax.staggerTo(".link:not(.link" + idx + ") div", 0.3, {x: -40, opacity : 0}, 0.1);
         TweenMax.staggerTo(".link" + idx + " div", 0.3, {x: 0, opacity : 1}, 0.1);
     }else{
         TweenMax.staggerTo(".link" + idx + " div", 0.3, {x: -40, opacity : 0}, 0.1);
@@ -34,7 +33,8 @@ $(".link div").on("click", function(){
     subLink = "/sub" + subIdx;
     
     subIdx == 0 ? goLink = link + "/index.html" : goLink = link + subLink + "/index.html";
-    window.open(goLink);
+
+    goLink == '../sub1/sub1/index.html' ? alert('준비중입니다') : window.open(goLink, '_self');
 });
 
 var mbLink = [

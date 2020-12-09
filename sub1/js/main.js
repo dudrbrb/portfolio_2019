@@ -17,7 +17,7 @@ function makeSocial(){
 
 
 var swiper = new Swiper(".swiper-container", {
-    slidesPerView: 3.3
+    slidesPerView: 'auto'
 });
   
 
@@ -25,6 +25,7 @@ var navi = document.querySelectorAll('nav li ul li');
 
 [].forEach.call(navi, function(e){ 
   e.addEventListener("click", function(){
-         alert(e.innerHTML)
+    var menuName = e.innerHTML;
+    menuName == "인기메뉴" ? alert('준비중입니다'): alert(e.innerHTML)
   }, false); 
 }); 

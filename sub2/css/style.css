@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Nanum+Gothic:400,700,800|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
+
+body {
+  position: relative;
+  font-family: "Nanum Gothic", "Roboto", sans-serif, "Lora", serif;
+}
+header{
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-around;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 11;
+  background-color: #fff;
+}
+.logo{
+  width: 120px;
+  height: 48px;
+  margin-top: 15px;
+}
+.main-nav ul li{
+  display: inline-block;
+  margin: 33px 10px;
+}
+.sub-nav ul li{
+  display: inline-block;
+  margin: 33px 5px;
+}
+.sub-nav ul li img{
+  vertical-align: middle;
+}
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+
+}
+
+.swiper-pagination{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  border-right: 1px solid #fff;
+  color: rgb(255, 255, 255);
+  padding-top: 16%;
+  margin-left: 20px;
+}
+.swiper-pagination-bullet{
+  margin: 16px 0 !important;
+  background: none;
+  text-align: left;
+  width: 100%;
+  opacity: 0.6;
+}
+.swiper-pagination-bullet-active{
+  opacity: 1;
+}
