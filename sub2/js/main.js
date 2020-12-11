@@ -16,7 +16,7 @@ var swiper = new Swiper(".swiper-container", {
 window.onload = function(){
   var swiperSlide = document.querySelectorAll('.swiper-slide');
   swiperSlide.forEach(function(e){ 
-    e.style.background = "url(img/"+ swiper.realIndex +"/bg.png)"
+    e.style.background = "url(img/"+ (swiper.realIndex + 1) +"/bg.png)"
     swiper.realIndex++
   }); 
 
