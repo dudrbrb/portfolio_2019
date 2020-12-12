@@ -229,11 +229,110 @@ header{
   bottom: 0px;
   width: 100%;
 }
-.swiper-slide:nth-child(5) .contents span{
+.swiper-slide:nth-child(5) span{
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
 }
-.swiper-slide:nth-child(5) .contents p{
+.swiper-slide:nth-child(5) p{
  font-size: 14px;
+}
+
+/* swiper6 */
+.swiper-slide:nth-child(6) .contents {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+  margin-top: 2%;
+}
+.swiper-slide:nth-child(6) .contents ul li{
+ display: inline-block;
+ color: rgb(233, 198, 159);
+ margin: 0 10px;
+}
+.swiper-slide:nth-child(6) .contents ul li:hover{
+  text-decoration: underline;
+  color: rgb(247, 215, 175);
+}
+.swiper-slide:nth-child(6) .contents > img{
+  margin: 2%;
+}
+.swiper-slide:nth-child(6) .contents > p{
+  line-height: 26px;
+}
+
+.swiper-slide:nth-child(6) .store div{
+ display: inline-block;
+ margin-top: 3%;
+ width: 20%;
+ position: relative;
+}
+.swiper-slide:nth-child(6) .store div img{
+  width: 100%;
+}
+.swiper-slide:nth-child(6) .store div p{
+  background-color: rgba(0, 0, 0, 0.6);
+  line-height: 25px;
+  font-size: 14px;
+  padding: 10px 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.swiper-slide:nth-child(6) .store div span{
+  font-weight: 600;
+  font-size: 16px;
+
+}
+
+/* swiper7 */
+.swiper-slide:nth-child(7) .title-wrapper{
+  text-align: left;
+  margin-top: 15%;
+  margin-left: 24%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10%;
+}
+.swiper-slide:nth-child(7) .contents{
+  color: rgb(233, 198, 159);
+  border: 3px solid rgb(233, 198, 159);
+  width: 200px;
+  text-align: center;
+  line-height: 56px;
+  font-size: 22px;
+  margin-top: 3%;
+  margin-left: 24%;
+}
+.footer{
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 2% 24%;
+  font-size: 0.7em;
+}
+.footer img{
+  width: 13%;
+}
+.footer ul {
+  border-bottom: 2px solid #fff;
+  padding: 1% 0; 
+  width: 50%;
+}
+.footer ul li{
+  display: inline-block;
+  padding: 0 1%;
+  border-left: 1px solid #fff;
+}
+.footer ul li:first-child{
+  padding-left: 0;
+  border: 0;
+}
+.footer div{
+  margin-top: 1%;
+  color: rgb(218, 218, 218);
+  line-height: 1.3em;
 }
