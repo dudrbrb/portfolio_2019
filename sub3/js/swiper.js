@@ -13,9 +13,9 @@ var mainSwiper = new Swiper(".main-swiper", {
     on:{
       slideChange : mainPagi
     }
-});
-
-var swiper1 = new Swiper(".swiper1", {
+  });
+  
+  var swiper1 = new Swiper(".swiper1", {
     slidesPerView: 'auto',
     spaceBetween: 20,
     centeredSlides: true,
@@ -26,22 +26,45 @@ var swiper1 = new Swiper(".swiper1", {
 var swiper1Nav = new Swiper(".swiper1-nav", {
   slidesPerView: 'auto',
   centeredSlides: true,
-  loop:true,
-  autoplay: true
+  loop:true
 });
 
 swiper1.controller.control = swiper1Nav;
 swiper1Nav.controller.control = swiper1;
 
-swiper1.snapGrid[swiper1.snapGrid.length - 1] = swiper1.slidesGrid[swiper1.slidesGrid.length - 1];
 
-function maingBgSet(){
-  var swiperSlide = document.querySelectorAll('.main-wrapper > .swiper-slide');
-  swiperSlide.forEach(function(e){ 
-    e.style.background = "url(img/"+ (mainSwiper.realIndex + 1) +"/bg.png)"
-    mainSwiper.realIndex++
-  }); 
-}
+var swiper2 = new Swiper(".swiper2", {
+  slidesPerView: 'auto',
+  autoplay: true,
+  loop:true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  on:{
+    slideChange : swiper2Pagi
+  }
+});
+
+var swiper3 = new Swiper(".swiper3", {
+  slidesPerView: 'auto',
+  autoplay: true,
+  loop:true,
+  navigation: {
+    nextEl: '.swiper3-next',
+    prevEl: '.swiper3-prev',
+  },
+});
+
+var swiper4 = new Swiper(".swiper4", {
+  slidesPerView: 'auto',
+  autoplay: true,
+  loop:true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+});
 
 function mainPagi(){
   var idx = this.realIndex,
@@ -68,18 +91,9 @@ function mainPagi(){
   activeBullet.style.background ="none";
 }
 
-function addClass(e, c) {
-    e.classList.add(c);
-    return e;
-};
+function swiper2Pagi(){
+  var pagiBox = document.querySelector('.swiper2-pagi');
+  var idx = this.realIndex + 1;
 
-function removeClass(e, c) {
-    e.classList.remove(c);
-    return e;
-};
-
-function getElementIndex(e, range) {
-    if (!!range) return [].indexOf.call(e, range);
-    return [].indexOf.call(e.parentNode.children, e);
+  pagiBox.innerHTML = idx + '/3'
 }
-

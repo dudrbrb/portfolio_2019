@@ -6,10 +6,14 @@ $(window).scroll(function () {
 
     if(st > 80){
         $("header").addClass("on")
-        TweenMax.to($(".title"), 0.4, {scale: 0.85})
+        TweenMax.to(".title", 0.4, {scale: 0.85})
     }else{
         $("header, .top_nav li").removeClass("on")
-        TweenMax.to($(".title"), 0.4, {scale: 1})
+        TweenMax.to(".title", 0.4, {scale: 1})
+    }
+
+    if(st > 6400){
+        TweenMax.staggerTo(".bar", 0.6, {scaleX: 1, delay: 0.3}, 0.4)
     }
 });
 

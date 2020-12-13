@@ -620,6 +620,9 @@ header.on .logo{
   background-color: #ffffff;
   position: absolute;
   height: 4px;
+  transform: scaleX(0);
+
+  transform-origin: left;
 }
 .bar1{
   width: 100%;
