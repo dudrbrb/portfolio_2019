@@ -9,14 +9,14 @@ body {
 }
 .swiper-slide img{
   position: relative;
-  left: 8%;
+  left: 13%;
   top: 17%;
   width: 60%;
+  box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.4) ;
 }
-
 .swiper-pagination{
   position: absolute;
-  left: 70% !important;
+  left: 74% !important;
   top: 17%;
   z-index: 2;
 }
@@ -25,11 +25,13 @@ body {
   display: block;
   height: 18%;
   width: 7%;
-  background:none;
+  border-radius: 0;
+  background: none;
 }
 .swiper-pagination-bullet-active{
   opacity: 1;
 }
 .swiper-pagination-bullet img{
+  box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.4) ;
   width: 90%;
 }

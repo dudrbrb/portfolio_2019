@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900|Noto+Sans:400,700&display=swap");
+
+body {
+  font-family: "Noto Sans", "Noto Sans KR", sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.swiper-container{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.wrapper{
+  background: rgb(255, 255, 255, 0.7);
+  position: relative;
+  width: 80%;
+  /* height: 70%; */
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin: auto ;
+  z-index: 1;
+  box-shadow: 0px 2px 8px rgb(0, 0, 0, 0.4) ;
+  padding: 2% 3%;
+}
+.wrapper > div{
+  display: inline-block;
+  vertical-align: top;
+}
+.wrapper > div:nth-child(1){
+  width:20%;
+  padding-top: 3%;
+}
+.wrapper > div:nth-child(1) img{
+  width: 100%;
+}
+.wrapper > div:nth-child(1) ul{
+  margin-bottom: 20px;
+}
+.wrapper > div:nth-child(1) ul li{
+  display: inline-block;
+}
+.wrapper > div:nth-child(1) .info{
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin-top: 20px;
+}
+.wrapper > div:nth-child(1) .info div{
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+}
+.wrapper > div:nth-child(1) .info span{
+  font-weight: 500;
+  margin-right: 20px;
+}
+.wrapper > div:nth-child(2){
+  width: 40%;
+  margin-left: 3%;
+}
+.wrapper > div:nth-child(2) span{
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5%;
+}
+.wrapper > div:nth-child(2) p{
+  margin-left: 7%;
+  font-size: 0.9em;
+  line-height: 1.3em;
+}
+
+.music-info{
+  background: url('../img/info.png') no-repeat center;
+  width: 50px;
+  height: 16px;
+}
+.music-lyr{
+  background: url('../img/lyr.png') no-repeat center;
+  width: 50px;
+  height: 16px;
+}
+.music-lstn{
+  background: url('../img/listen.png') no-repeat center;
+  width: 50px;
+  height: 16px;
+}
