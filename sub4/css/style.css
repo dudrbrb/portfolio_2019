@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900|Noto+Sans:400,700&display=swap");
+
+body {
+  font-family: "Noto Sans", "Noto Sans KR", sans-serif;
+}
+.swiper-container{
+  width: 100%;
+  height: 100vh;
+}
+.swiper-slide img{
+  width: 100%;
+}
+
+.title{
+  position: absolute;
+  z-index: 3;
+  top: 9%;
+  left: 6%;
+}
+.swiper-pagination{
+  position: fixed;
+  bottom: 30px;
+}
+.swiper-pagination span{
+  margin: 0 10px  10px !important;
+  width: 10px;
+  height: 10px;
+  background: none;
+  border: 1px solid #fff;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: rgb(255, 255, 255) !important;
+
+}
+.swiper-button-prev,
+.swiper-button-next{
+  width: 10%;
+  height: 110vh;
+  top: 0;
+  position: fixed;
+}
+.swiper-button-prev{
+  background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(255,255,255,0) 100%);
+  left: 0;
+}
+.swiper-button-next{
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.2) 100%);
+  right: 0;
+}
+.swiper-button-prev:hover{
+  background: linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0) 100%);
+}
+.swiper-button-next:hover{
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 100%);
+}
+:root {
+  --swiper-theme-color: #fff;
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav, nav ul li{
+  display: inline-block;
+}
+.main-nav ul li{
+  margin: 0 20px;
+  font-size: 22px;
+}
