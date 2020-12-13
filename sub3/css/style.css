@@ -77,26 +77,32 @@ body {
   filter: grayscale(0);
   margin-top: -18%;
 }
-.pagi1{
+.swiper1-nav{
   color: #fff;
-  left: 21%;
+  left: 3%;
   top: 8%;
-  width: 55%;
-  background: url('../img/2/bar.png') no-repeat;
-  background-position: 0 36%;
-  background-size: contain;
+  width: 30%;
   padding: 0 90px;
   position: relative;
-  display: flex;
-  justify-content: space-around;
 }
-.pagi1 div{
+
+.year-bar{
+  position: absolute;
+  width: 43%;
+  top: 82.3%;
+  left: 31.5%;
+}
+.swiper1-nav .swiper-slide{
   text-align: center;
   font-size: 0.9em;
   line-height: 20px;
+  width: 243px;
 }
 
-.pagi1 div span{
+.swiper1-nav .swiper-slide-active{
+  color: rgb(221, 217, 181);
+}
+.swiper1-nav span{
   display:block;
   background-color: #fff;
   opacity: 1;
@@ -106,8 +112,4 @@ body {
   left: 0;
   right: 0;
   margin: 20px auto;
-}
-
-.pagi1 div.on{
-  color: rgb(221, 217, 181);
 }
