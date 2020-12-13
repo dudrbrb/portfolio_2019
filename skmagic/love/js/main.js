@@ -5,17 +5,8 @@ $(window).on('load',function(){
   callResult()
 });
 
-var ans1_1;
-var ans1_2;
-var ans2_1;
-var ans2_2;
-var ans3_1;
-var ans3_2;
-var ans4_1;
-var ans4_2;
-
-var callAnsArr = [];
-var answerArr = [];
+var ans1_1, ans1_2, ans2_1, ans2_2, ans3_1, ans3_2, ans4_1, ans4_2;
+var callAnsArr = [], answerArr = [];
 /**
  * 스와이퍼 초기화 이후
  */
@@ -126,7 +117,7 @@ function callResult(){
            ans8 = data.data.q4[1].per;
         
            callAnsArr = [ans1, ans2, ans3, ans4, ans5, ans6, ans7 ,ans8];
-           callAnsArr = callAnsArr.map(function(value, i , arr){
+           callAnsArr = callAnsArr.map(function(value){
             return Math.round(value);
            })
            

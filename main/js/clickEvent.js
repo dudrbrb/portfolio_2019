@@ -1,6 +1,3 @@
-var idx,
-    subIdx;
-
 var link,
     goLink,
     subLink;
@@ -18,14 +15,17 @@ $('.top_nav li').on('click', function(e){
 $(".link_btn").on("click" , function(){
     $(".link_btn").removeClass('on');
     $(this).toggleClass('on');
-    
-    idx = $(this).index(".link_btn") + 1;
-    link = "../sub" + idx;
 
-    if(idx == 4 && $(this).hasClass("on")){ 
-        TweenMax.staggerTo(".link div", 0.3, {x: 0, opacity : 1}, 0.1);
+    idx = $(this).index(".link_btn") + 1;
+
+    if(idx == 4 ){
+        if($(this).hasClass("on")){ 
+            TweenMax.staggerTo(".link div", 0.3, {x: 0, opacity : 1}, 0.1);
+        }else{
+            TweenMax.staggerTo(".link div", 0.3, {x: -40, opacity : 0}, 0.1);
+        }
     }else{
-        TweenMax.staggerTo(".link div", 0.3, {x: -40, opacity : 0}, 0.1);
+        link = "../sub" + idx;
     }
 });
 

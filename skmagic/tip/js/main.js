@@ -12,13 +12,13 @@ $('.box_btn').on('click', function(){
 
     $('.arr' + idx).toggleClass('on');
     
-    if( $('.arr' + idx).hasClass('on') ){
-        TweenMax.set($('.arr' + idx), {rotation: 180})
-        TweenMax.to(('.box' + idx), 1, {height: ht})
-        TweenMax.to(('.box' + idx + ' .top_img'), 0.6, { opacity: 1, delay: 0.4})
-    }else{
-        TweenMax.set($('.arr' + idx), {rotation: 0})
-        TweenMax.to(('.box' + idx), 0.6, {height: 0})
-        TweenMax.to(('.box' + idx + ' .top_img'), 0.6, { opacity: 0})
-    }
+    if( $('.arr' + idx).hasClass('on')) arrMotion(idx, 180, ht, 1, 0.4);
+    else arrMotion(idx, 0, 0, 0, 0);
+   
 });
+
+function arrMotion(idx, r, ht, o,d){
+    TweenMax.set($('.arr' + idx), {rotation: r})
+    TweenMax.to(('.box' + idx), 0.6, {height: ht})
+    TweenMax.to(('.box' + idx + ' .top_img'), 0.6, { opacity: o, delay: d})
+}

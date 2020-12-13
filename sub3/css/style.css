@@ -81,22 +81,22 @@ body {
   color: #fff;
   left: 3%;
   top: 8%;
-  width: 30%;
+  width: 35%;
   padding: 0 90px;
   position: relative;
 }
 
 .year-bar{
   position: absolute;
-  width: 43%;
-  top: 82.3%;
-  left: 31.5%;
+  width: 56%;
+  top: 81.6%;
+  left: 25.5%;
 }
 .swiper1-nav .swiper-slide{
   text-align: center;
   font-size: 0.9em;
   line-height: 20px;
-  width: 243px;
+  width: 52%;
 }
 
 .swiper1-nav .swiper-slide-active{
