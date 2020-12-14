@@ -1,5 +1,8 @@
 $(document).ready(function() {
   firstMotion();
+  if(getCookie('intro')){
+    $('.intro-popup').hide();
+  }
 });
 
 // graphic swiper

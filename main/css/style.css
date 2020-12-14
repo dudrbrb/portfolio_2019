@@ -702,3 +702,49 @@ header.on .logo{
   box-sizing: border-box;
   
 }
+
+.intro-popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.425);
+  z-index: 22;
+}
+.intro{
+  background-color: #fff;
+  width:400px;
+  height: 230px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 80px 40px;
+  font-size: 24px;
+  line-height: 35px;
+  border: 2px solid #6d6d6d;
+}
+.intro p{
+  margin-bottom: 20px;
+}
+
+.intro label{
+  font-size: 18px;
+}
+.introClose{
+  font-size: 18px;
+  width: 80px;
+  left: 0;
+  right: 0;
+  margin: 10px auto;
+  border-radius: 8px;
+  background-color: #f75d5d;
+  color: #fff;
+  font-weight: 600;
+}
