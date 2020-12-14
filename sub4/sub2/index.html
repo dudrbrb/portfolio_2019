@@ -98,12 +98,24 @@
                 <th>가사</th>
                 <th>듣기</th>
             </table>
-        </div>
-        <div class="player">
-            
+            <div class="player">
+                <div class="title">
+                    <img src="img/music.png">
+                    <span>Dream Girl</span>
+                </div>
+                <button class="soundIcon" id="sound-on"> <img src="img/stop.png" > </button>
+                <button class="soundIcon" id="sound-off">  <img src="img/play.png" > </button>
+                <div class="playing-time">0:00</div>
+                <div class="playing-bar-bg">
+                    <div class="playing-bar"></div>
+                </div>
+                <div class="time">3:00</div>
+            </div>
         </div>
     </div>
 	<script src="../../common_file/js/swiper-bundle.min.js"></script>
+	<script src="../../common_file/js/TweenMax.min.js"></script>
+    <script src="js/sound.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
