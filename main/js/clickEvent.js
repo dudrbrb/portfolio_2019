@@ -39,7 +39,7 @@ var mbLink = [
   "../licence/index.html",
   "../2020outer/index.html",
   "../highteen_test/index.html",
-  "../eland/201008/index.html",
+  "../eland/201008/main/index.html",
   "../miraepay/index.html",
   "../skmagic/tip/index.html",
   "../skmagic/love/index.html",
