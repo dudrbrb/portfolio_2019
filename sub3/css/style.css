@@ -88,9 +88,9 @@ body {
 
 .year-bar{
   position: absolute;
-  width: 56%;
-  top: 81.6%;
-  left: 25.5%;
+  width: 100%;
+  top: 34px;
+  left: 0;
 }
 .swiper1-nav .swiper-slide{
   text-align: center;
