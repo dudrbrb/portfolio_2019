@@ -1,6 +1,6 @@
 $(window).on("load", function () {
     var tit = document.location.href.split('/')[4];
-    $('.h-tit').attr('src', '../header/img/' + tit + '.png')
+//     $('.h-tit').attr('src', '../header/img/' + tit + '.png')
 })
 
 
